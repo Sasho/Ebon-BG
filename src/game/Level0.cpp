@@ -104,9 +104,8 @@ bool ChatHandler::HandleServerInfoCommand(const char* /*args*/)
     PSendSysMessage(LANG_USING_EVENT_AI,sWorld.GetCreatureEventAIVersion());
     PSendSysMessage(LANG_CONNECTED_USERS, activeClientsNum, maxActiveClientsNum, queuedClientsNum, maxQueuedClientsNum);
     PSendSysMessage(LANG_UPTIME, str.c_str());
-    SendSysMessage("Revision [30.3.2010][pr293] - MaNGOS modified for Valhalla Server");
-    SendSysMessage("GIT: http://github.com/Tasssadar/Valhalla-Project/commits");
-    SendSysMessage("Changelog: http://valhalla-team.com/web/changelog.php");
+    SendSysMessage("[patch rev.24] [31.03.10] MaNGOS modified version for EbonBG Server [by Sasho]");
+    SendSysMessage("Have fun and enjoy your stay !");
 
     if(sGameEventMgr.IsActiveEvent(41))
         SendSysMessage("Today Battleground: Arathi Basin!");
